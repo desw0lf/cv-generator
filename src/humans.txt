@@ -1,0 +1,9 @@
+/* TEAM */                     
+Name: Artur                  
+Site: deswolf.com             
+Location: London
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: Harp, EJS, SASS, node
+Software: Visual Studio Code
