@@ -1,0 +1,2 @@
+$summary-columns: #{2 / 1 / 3 / 6};
+@include generateRowColumns("summary", $summary-columns);

@@ -1,0 +1,14 @@
+* text = auto
+*.* text eol=lf
+
+*.doc  diff=astextplain
+*.DOC	diff=astextplain
+*.docx	diff=astextplain
+*.DOCX	diff=astextplain
+*.pdf	diff=astextplain
+*.PDF	diff=astextplain
+
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary

@@ -1,0 +1,28 @@
+@mixin generateRowColumns($id, $arr) {
+  ##{$id} {
+    > * {
+      @for $i from 1 through length($arr) {
+        $c: nth($arr, $i);
+        &:nth-child(#{$i}) {
+          grid-area: $c;
+        }
+      }
+    }
+  }
+}
+
+@function px($value) {
+  @return $value * 0.75 + pt;
+}
+
+@mixin screen {
+  @media screen {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}

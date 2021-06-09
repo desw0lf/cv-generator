@@ -1,0 +1,37 @@
+<header id="header">
+  <div>
+    <div class="avatar">
+      <img src="https://i.pravatar.cc/500?u=b" alt="" />
+    </div>
+  </div>
+  <div>
+    <h1 class="name"><%= name %></h1>
+    <span class="subtitle"><%= jobtitle %></span>
+  </div>
+  <div>
+    <div class="meta">
+      <ul role="list">
+        <li>
+          <span class="visually-hidden">Phone</span>
+          <%= meta.phone %>
+          <i class="material-icons" aria-hidden="true">phone</i>
+        </li>
+        <li>
+          <span class="visually-hidden">Email</span>
+          <%= meta.email %>
+          <i class="material-icons" aria-hidden="true">alternate_email</i>
+        </li>
+        <li>
+          <span class="visually-hidden">Website</span>
+          <a href="https://<%= meta.website %>" target="_blank"><%= meta.website %></a>
+          <i class="material-icons" aria-hidden="true">language</i>
+        </li>
+        <li>
+          <span class="visually-hidden">Address</span>
+          <%- meta.address.join("<br/>"); %>
+          <i class="material-icons" aria-hidden="true">place</i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

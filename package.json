@@ -1,0 +1,17 @@
+{
+  "name": "cv-generator",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "harp": "harp",
+    "start": "harp ./src",
+    "build": "harp ./src ./build",
+    "get-data": "node node-download-data.js",
+    "get-data-SAMPLE": "export DATA_JSON_URI=https://URL.com/file.json && npm run get-data"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "harp": "^0.40.3"
+  }
+}
