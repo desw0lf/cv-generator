@@ -8,3 +8,7 @@
 
 @import "./structure/_header";
 @import "./structure/_summary";
+
+@include print {
+  @import "./utilities/print_only";
+}

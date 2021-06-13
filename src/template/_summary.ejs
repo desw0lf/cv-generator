@@ -1,6 +1,10 @@
 <section id="summary">
   <div>
-    <h2>Personal Summary</h2>
-    <p><%= description %></p>
+    <h1>Personal Summary</h1>
+    <% description.map((current) => { %>
+      <p>
+        <%= current %>
+      </p>
+    <% }) %>
   </div>
 </section>

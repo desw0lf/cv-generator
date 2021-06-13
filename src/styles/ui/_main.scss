@@ -49,19 +49,30 @@ body {
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    + * {
-      margin-top: px(24);
-    }
+    // + * {
+    //   margin-top: px(24);
+    // }
   }
 }
 
 @include screen {
   #container {
-    padding: .3in;
+    > * {
+      padding: 0 $page-margin;
+    }
     margin: px(24) auto;
     box-sizing: border-box;
-    width: 8.5in;
-    height: 12in;
+    // width: 8.5in;
+    // height: 12in;
+    width: 8.3in;
+    height: 11.7in;
     box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+  }
+}
+
+#container {
+  > * {
+    padding-top: $page-margin;
+    padding-bottom: $page-margin;
   }
 }

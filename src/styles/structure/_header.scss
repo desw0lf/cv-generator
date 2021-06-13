@@ -4,6 +4,7 @@ $avatar-size: px(130);
 
 #header {
   align-items: center;
+  // background: mix(white, $primary, 90%);
 }
 
 .avatar {
@@ -13,14 +14,21 @@ $avatar-size: px(130);
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+  background: #EEECEC;
+  // background-color: #CBC5C5;
   img {
     width: auto;
     height: 100%;
+    pointer-events: none;
   }
 }
 
 .name {
-  font-size: px(40);
+  font-size: px(42);
+	// line-height: px(65);
+	// margin-bottom: px(28);
+
+  // font-size: px(40);
   color: $primary;
   display: table-caption;
   margin-bottom: px(4);

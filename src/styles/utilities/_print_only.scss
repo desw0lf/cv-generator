@@ -1,0 +1,12 @@
+body { 
+  -webkit-print-color-adjust: exact; 
+}
+
+@page {
+  margin-left: $page-margin-print;
+  margin-right: $page-margin-print;
+  margin-top: 0;
+  margin-bottom: 0;
+  // size: auto;
+  size: A4 portrait;
+}
