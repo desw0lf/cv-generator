@@ -7,6 +7,7 @@ $ff-material: "Material Icons";
 $content-font-size-px: 16;
 $content-spacing: 1.75;
 $content-spacing-px: $content-font-size-px * 1.75;
+$separator-opacity: 0.2;
 
 // https://www.cdnfonts.com/circular-std-book.font
 
@@ -85,9 +86,8 @@ ul {
     height: 1px;
     background: $black;
     top: 51%;
-    opacity: 0.2;
-    // left: 0;
-    // right: 0;
+    z-index: -1;
+    opacity: $separator-opacity;
   }
   &::before {
     right: 0;
