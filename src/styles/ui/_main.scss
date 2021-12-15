@@ -68,6 +68,9 @@ body {
     height: 11.7in;
     box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
   }
+  body {
+    padding-bottom: px(24);
+  }
 }
 
 #container {
