@@ -6,11 +6,13 @@
     <% let column = {start: i + 1, end: i + 2}; %>
     <% let gridArea = "1/" + column.start + "/2/" + column.end ; %>
     <div class="column" style="grid-area:<%= gridArea %>;">
-      <span class="h3"><%= category %></span>
+      <span class="h3 skills__category"><%= category %></span>
       <div>
-        <% list.map((skill) => { %>
-          <div><%= skill.name %></div>
-        <% }) %>
+        <ul>
+          <% list.map((skill) => { %>
+            <li><%= skill.name %></li>
+          <% }) %>
+        </ul>
       </div>
     </div>
   <% }) %>

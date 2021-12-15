@@ -52,6 +52,20 @@ p {
   }
 }
 
+ul {
+  padding-left: 28px;
+  li {
+    list-style-type: square;
+    color: $black;
+    &::marker {
+      color: $lightgray;
+    }
+    + li {
+      margin-top: 2px;
+    }
+  }
+}
+
 #container > h1 {
   margin-bottom: 0;
   padding-top: 0;
