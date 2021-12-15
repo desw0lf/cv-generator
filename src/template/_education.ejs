@@ -1,4 +1,4 @@
-<h1>Education</h1>
+<%- include('components/_title', { t: education }); %>
 <% education.list.map((current, i) => { %>
   <section id="education_<%= i %>" class="education joined-section">
     <div class="column education__meta">

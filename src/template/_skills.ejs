@@ -1,5 +1,5 @@
-<h1>Skills</h1>
-<% const skillsList = Object.entries(skills); %>
+<%- include('components/_title', { t: skills }); %>
+<% const skillsList = Object.entries(skills.list); %>
 <% const columnLength = skillsList.length; %>
 <section id="skills" class="skills" style="grid-template-columns:repeat(<%= columnLength %>, 1fr);">
   <% skillsList.map(([category, list], i) => { %>

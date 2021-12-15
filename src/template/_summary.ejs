@@ -1,7 +1,7 @@
-<h1>Bio</h1>
+<%- include('components/_title', { t: summary }); %>
 <section id="summary" class="summary">
   <div class="column">
-    <% description.map((current) => { %>
+    <% summary.description.map((current) => { %>
       <p>
         <%= current %>
       </p>

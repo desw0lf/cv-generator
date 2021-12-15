@@ -28,6 +28,10 @@ h1 {
   font-size: px(18);
 	line-height: px(29);
 	margin-bottom: px($content-spacing-px);
+  i {
+    vertical-align: middle;
+    margin-top: -4px;
+  }
 }
 
 .h3 {
