@@ -1,0 +1,17 @@
+<h1>Skills</h1>
+<% const skillsList = Object.entries(skills); %>
+<% const columnLength = skillsList.length; %>
+<section id="skills" class="skills" style="grid-template-columns:repeat(<%= columnLength %>, 1fr);">
+  <% skillsList.map(([category, list], i) => { %>
+    <% let column = {start: i + 1, end: i + 2}; %>
+    <% let gridArea = "1/" + column.start + "/2/" + column.end ; %>
+    <div class="column" style="grid-area:<%= gridArea %>;">
+      <span class="h3"><%= category %></span>
+      <div>
+        <% list.map((skill) => { %>
+          <div><%= skill.name %></div>
+        <% }) %>
+      </div>
+    </div>
+  <% }) %>
+</section>

@@ -12,11 +12,11 @@ $education-columns: #{1 / 1 / 2 / 4}, #{1 / 4 / 2 / 11};
     span {
       display:block;
     }
-    &__name {
-      font-weight: bold;
-      font-size: 13pt;
-      color: $primary;
-    }
+    // &__name {
+    //   font-weight: bold;
+    //   font-size: 13pt;
+    //   color: $primary;
+    // }
     &__dates {
       color: $lightgray;
     }
