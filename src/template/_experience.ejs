@@ -1,6 +1,6 @@
-<h1>Education</h1>
-<% education.list.map((current, i) => { %>
-  <section id="education_<%= i %>" class="education joined-section">
+<h1>Experience</h1>
+<% experience.list.map((current, i) => { %>
+  <section id="experience_<%= i %>" class="education joined-section">
     <div class="column education__meta">
       <span class="education__meta__name"><%= current.name %></span>
       <span class="education__meta__dates">
@@ -9,7 +9,7 @@
           <%- ["NOW_YEAR"].includes(date) ? new Date().getFullYear() : date %>
         <% }) %>
       </span>
-      <span class="education__meta__qualification"><%= current.qualification %></span>
+      <span class="education__meta__qualification"><%= current.role %></span>
     </div>
     <div class="column education__description">
       <p>

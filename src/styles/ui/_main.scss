@@ -72,8 +72,11 @@ body {
 
 #container {
   > * {
-    padding-top: $page-margin;
-    padding-bottom: $page-margin;
+    padding-top: $page-spacing;
+    padding-bottom: $page-spacing;
+    &:nth-child(1) {
+      padding-top: $page-margin;
+    }
   }
   .joined-section + .joined-section {
     padding-top: 0;
