@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <!-- todo favicon -->
-    <title><%= title %> | <%= name %></title>
+    <% const d = new Date(); %>
+    <% const dateTitle = d.getDay() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear(); %>
+    <title><%= title %> | <%= name %> | <%= dateTitle %></title>
     <link type="text/plain" rel="author" href="humans.txt" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="styles/global.css" type="text/css" rel="stylesheet" />
