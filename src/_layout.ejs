@@ -21,9 +21,10 @@
     <div id="container">
       <%- yield %>
     </div>
-    <aside class="print-hidden">
-      Press "Command + P" to print or save as an A4 PDF document.
-      <a href="#!print" onclick="printDocument(event);">Print</a>
+    <aside class="action-panel print-hidden">
+      <a href="#!print" onclick="printDocument(event);" title="Press 'Command + P' to print or save as an A4 PDF document">
+        <i class="material-icons">print</i>
+      </a>
     </aside>
   </body>
 </html>

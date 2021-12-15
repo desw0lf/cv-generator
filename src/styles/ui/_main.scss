@@ -82,3 +82,31 @@ body {
     padding-top: 0;
   }
 }
+
+#container:hover + aside.action-panel {
+  opacity: 0.2;
+}
+
+aside.action-panel {
+  position: fixed;
+  top: 18pt;
+  right: 18pt;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+  a {
+    font-size: 0;
+    padding: 8px;
+    border-radius: 50%;
+    border: 2px solid $primary;
+    background: white;
+    display: inline-block;
+    color: $black;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $primary;
+    }
+  }
+  i.material-icons {
+    font-size: 48px;
+  }
+}
