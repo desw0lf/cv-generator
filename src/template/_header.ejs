@@ -1,9 +1,11 @@
-<header id="header" class="header">
-  <div class="column">
-    <div class="avatar">
-      <img src="<%= meta.imageURI %>" alt="" />
+<header id="header" class="header<%= !meta.imageURI ? '__no-picture' : '' %>">
+  <% if (meta.imageURI) { %>
+    <div class="column">
+      <div class="avatar">
+        <img src="<%= meta.imageURI %>" alt="" />
+      </div>
     </div>
-  </div>
+  <% } %>
   <div class="column">
     <span class="name"><%= name %></span>
     <span class="subtitle"><%= jobtitle %></span>

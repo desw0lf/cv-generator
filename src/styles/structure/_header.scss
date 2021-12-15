@@ -2,6 +2,10 @@ $header-columns: #{1 / 1 / 2 / 2}, #{1 / 2 / 2 / 4}, #{1 / 4 / 2 / 6};
 @include generateRowColumns("header", $header-columns);
 $avatar-size: px(130);
 
+$header__no-picture-columns: #{1 / 1 / 2 / 4}, #{1 / 4 / 2 / 6};
+@include generateRowColumns("header__no-picture", $header__no-picture-columns);
+
+
 #header {
   align-items: center;
   // background: mix(white, $primary, 90%);
