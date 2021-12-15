@@ -80,13 +80,18 @@ h1 {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  > span {
+    display: inline-block;
+    background: white;
+    padding: 0 12px;
+  }
   // background: white;
   &::before, &::after {
     position: absolute;
     overflow: hidden;
     content: " ";
     display: block;
-    width: 42%;
+    width: 50%;
     height: 1px;
     background: $black;
     top: 51%;

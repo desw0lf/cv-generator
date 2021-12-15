@@ -1,8 +1,10 @@
 <h1>
-  <% if (t.titleIcon) { %>
-    <i class="<%= t.titleIconClass ? t.titleIconClass : 'material-icons' %>"><%= t.titleIcon %></i>
-  <% } %>
-  <% if (t.title) { %>
-    <span><%= t.title %></span>
-  <% } %>
+  <span>
+    <% if (t.titleIcon) { %>
+      <i class="<%= t.titleIconClass ? t.titleIconClass : 'material-icons' %>"><%= t.titleIcon %></i>
+    <% } %>
+    <% if (t.title) { %>
+      <span><%= t.title %></span>
+    <% } %>
+  </span>
 </h1>
