@@ -1,0 +1,30 @@
+$education-columns: #{1 / 1 / 2 / 4}, #{1 / 4 / 2 / 11};
+@include generateRowColumns("education", $education-columns);
+
+#container > .education {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.education {
+  &__meta {
+    text-align: right;
+    span {
+      display:block;
+    }
+    &__name {
+      font-weight: bold;
+      font-size: 13pt;
+      color: $primary;
+    }
+    &__dates {
+      color: $lightgray;
+    }
+    &__qualification {
+      font-size: 11pt;
+      font-weight: 500;
+    }
+  }
+  &__description {
+    padding-left: 48px;
+  }
+}

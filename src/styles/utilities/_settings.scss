@@ -1,6 +1,8 @@
 $blue: #1352AF;
 $primary: $blue;
 $black: #2D343A;
+$gray: mix(white, $black, 0.7);
+$lightgray: #6E7381;
 
 $page-margin: 0.3in;
 $page-margin-print: $page-margin; // + 0.2in;

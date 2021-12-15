@@ -1,0 +1,15 @@
+<h1>Education</h1>
+<% education.list.map((current, i) => { %>
+  <section id="education_<%= i %>" class="education joined-section">
+    <div class="column education__meta">
+      <span class="education__meta__name"><%= current.name %></span>
+      <span class="education__meta__dates"><%= current.dates %></span>
+      <span class="education__meta__qualification"><%= current.qualification %></span>
+    </div>
+    <div class="column education__description">
+      <p>
+        <%= current.description %>
+      </p>
+    </div>
+  </section>
+<% }) %>

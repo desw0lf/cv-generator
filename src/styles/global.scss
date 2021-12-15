@@ -8,6 +8,9 @@
 
 @import "./structure/_header";
 @import "./structure/_summary";
+@import "./structure/_education";
+
+@import "./ui/_temp";
 
 @include print {
   @import "./utilities/print_only";

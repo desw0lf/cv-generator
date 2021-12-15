@@ -1,6 +1,6 @@
 @mixin generateRowColumns($id, $arr) {
-  ##{$id} {
-    > * {
+  .#{$id} {
+    > .column {
       @for $i from 1 through length($arr) {
         $c: nth($arr, $i);
         &:nth-child(#{$i}) {

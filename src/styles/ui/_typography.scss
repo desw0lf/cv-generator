@@ -38,9 +38,15 @@ a {
 }
 
 p {
+  color: $gray;
   font-size: px($content-font-size-px);
   line-height: $content-spacing;
   + p {
     margin-top: px($content-spacing-px);
   }
+}
+
+#container > h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
